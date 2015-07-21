@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BX-SLIDER</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <ul class="bxslider">
+            <li>
+                <div class="col-sx-6">
+                    <img src="css/images/picto.png" alt="">
+                </div>
+                <div class="col-sx-6">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, quis.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus iusto eaque delectus officia illo hic adipisci architecto aspernatur! Maiores, laudantium.</p>
+                </div>
+            </li>
+            <li>
+                <div class="col-sx-6"><img src="css/images/hillside.jpg" alt="">
+                </div>
+                <div class="col-sx-6">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, quis.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus iusto eaque delectus officia illo hic adipisci architecto aspernatur! Maiores, laudantium.</p>
+                </div>
+            </li>
+            <li>
+                <div class="col-sx-6"><img src="css/images/houses.jpg" alt="">
+                </div>
+                <div class="col-sx-6">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, quis.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus iusto eaque delectus officia illo hic adipisci architecto aspernatur! Maiores, laudantium.</p>
+                </div>
+            </li>
+        </ul>
+        <div id="bx-pager">
+            <a data-slide-index="0" href=""><img src="css/images/picto.png" />
+            </a>
+            <a data-slide-index="1" href=""><img src="css/images/hillside.jpg" />
+            </a>
+            <a data-slide-index="2" href=""><img src="css/images/houses.jpg" />
+            </a>
+        </div>
+    </div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider({
+                pagerCustom: '#bx-pager',
+                auto: true,
+                pause: 2000
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.container {
+    width: 960px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#bx-pager img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#bx-pager {
+    text-align: center;
+}
